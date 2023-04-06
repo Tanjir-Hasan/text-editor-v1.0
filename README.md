@@ -3,4 +3,4 @@ A simple text editor using vanilla css and javaScript only.
 
 <hr>
 
-Hosted in Netlify -> https://dapper-mermaid-f7869c.netlify.app/
+Hosted in Netlify -> https://texteditor-v1-th.netlify.app
