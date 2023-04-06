@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <!-- font awesome CDN -->
+    <script src="https://kit.fontawesome.com/80cb2b6a37.js" crossorigin="anonymous"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+
+<body class="container">
+    <header>
+        <h1><span style="color: #d8572a;">HTML</span> <span></span> Vanilla <sub style="color: #86bbd8;">CSS</sub>
+            <sup style="color: #f6ae2d;">(JS)</sup>
+            Text Editor
+        </h1>
+    </header>
+
+    <main class="main">
+        <!-- top section: all editor things -->
+        <section>
+            <div class="top-container">
+                <span><input type="number" onchange="fontSize(this)" value="16" min="1" max="99"
+                        class="input-number"></span>
+                <button onclick="bold(this)"><i class="fa-solid fa-bold"></i></button>
+                <button onclick="italic(this)"><i class="fa-solid fa-italic"></i></button>
+                <button onclick="updateFont()"><i class="fa-solid fa-shuffle"></i></button>
+                <button onclick="underline(this)"><i class="fa-solid fa-underline"></i></button>
+                <button onclick="alignLeft(this)"><i class="fa-solid fa-align-left"></i></button>
+                <button onclick="alignCenter(this)"><i class="fa-solid fa-align-center"></i></button>
+                <button onclick="alignRight(this)"><i class="fa-solid fa-align-right"></i></button>
+                <button onclick="upperAndLowerCase(this)">
+                    aA
+                </button>
+                <button onclick="clearField()">
+                    <i class="fa-solid fa-text-slash"></i>
+                </button>
+                <button>
+                    <input onchange="color(this)" type="color">
+                </button>
+            </div>
+        </section>
+        <!-- text area: this is where you type -->
+        <section class="textarea">
+            <textarea placeholder="Type Your Text" id="textarea"></textarea>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HTML Vanilla CSS (JS) Text Editor. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
